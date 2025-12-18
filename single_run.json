@@ -1,0 +1,37 @@
+{
+  "config": {
+    "top_p": 0.2,
+    "draft_k": 6,
+    "temperature": 1.0,
+    "max_new_tokens": 128,
+    "dataset_size": 10
+  },
+  "baseline": {
+    "total_time": 10.66,
+    "avg_time": 1.0659,
+    "wer": 0.1024
+  },
+  "speculative": {
+    "total_time": 5.98,
+    "avg_time": 0.5977,
+    "wer": 0.0906
+  },
+  "speedup": 1.78,
+  "samples": [
+    {
+      "reference": "mister quilter is the apostle of the middle classes and we are glad to welcome his gospel",
+      "baseline": "mr. quilter is the apostle of the middle classes, and we are glad to welcome his gospel.",
+      "speculative": "mr. quilter is the apostle of the middle classes and we are glad to welcome his gospel."
+    },
+    {
+      "reference": "nor is mister quilter's manner less interesting than his matter",
+      "baseline": "nor is mr. quilter's manner less interesting than his matter.",
+      "speculative": "nor is mr. quilter's manner less interesting than his matter."
+    },
+    {
+      "reference": "he tells us that at this festive season of the year with christmas and roast beef looming before us similes drawn from eating and its results occur most readily to the mind",
+      "baseline": "he tells us that at this festive season of the year with christmas and roast beef looming before us similes drawn from eating and its results occur most readily to the mind",
+      "speculative": "he tells us that at this festive season of the year with christmas and roast beef looming before us similes drawn from eating and its results occur most readily to the mind"
+    }
+  ]
+}
